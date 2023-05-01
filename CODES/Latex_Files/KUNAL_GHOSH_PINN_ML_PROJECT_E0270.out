@@ -1,0 +1,52 @@
+\BOOKMARK [1][-]{section*.1}{Name: Kunal Ghosh}{}% 1
+\BOOKMARK [1][-]{section*.2}{Course: M.Tech \(Aerospace Engineering\)}{}% 2
+\BOOKMARK [1][-]{section*.3}{Subject: Machine Learning \(E0-270\)}{}% 3
+\BOOKMARK [1][-]{section*.4}{SAP No.: 6000007645}{}% 4
+\BOOKMARK [1][-]{section*.5}{S.R. No.: 05-01-00-10-42-22-1-21061}{}% 5
+\BOOKMARK [1][-]{section*.6}{Importing the required Libraries}{}% 6
+\BOOKMARK [2][-]{section*.7}{Reading the data from the file}{section*.6}% 7
+\BOOKMARK [2][-]{section*.8}{Displaying the training set}{section*.6}% 8
+\BOOKMARK [2][-]{section*.9}{Factor N, Factor S, Factor I and Factor R will be used in PINNs}{section*.6}% 9
+\BOOKMARK [2][-]{section*.10}{Factor N}{section*.6}% 10
+\BOOKMARK [2][-]{section*.11}{Dropping the columns of data which will NOT be used in training the Neural Network}{section*.6}% 11
+\BOOKMARK [2][-]{section*.12}{Factor S}{section*.6}% 12
+\BOOKMARK [2][-]{section*.13}{Factor I}{section*.6}% 13
+\BOOKMARK [2][-]{section*.14}{Factor R}{section*.6}% 14
+\BOOKMARK [2][-]{section*.15}{Normalizing the data}{section*.6}% 15
+\BOOKMARK [2][-]{section*.16}{Dataloading}{section*.6}% 16
+\BOOKMARK [2][-]{section*.17}{We will be using a sliding time window approach. So, preparing the data for that.}{section*.6}% 17
+\BOOKMARK [2][-]{section*.18}{The Sliding\137Time\137Windows\(data, Sequence\137Length\) function will create each data points for training the neural networks \(Both LSTM and PINNs\)}{section*.6}% 18
+\BOOKMARK [2][-]{section*.19}{Each data point consist of k days of data \(stored in x\) and the data of \(k+1\)\136\173th\175 day as the target variable \(stored in y\). In the code, we have used k = Sequence\137Length.}{section*.6}% 19
+\BOOKMARK [2][-]{section*.20}{NOTE: We are having three variables S, I and R in the data}{section*.6}% 20
+\BOOKMARK [1][-]{section*.21}{Declaring the value of k \(Sequence\137Length\)}{}% 21
+\BOOKMARK [2][-]{section*.22}{Shape of the data}{section*.21}% 22
+\BOOKMARK [2][-]{section*.23}{Shape of the target variable}{section*.21}% 23
+\BOOKMARK [2][-]{section*.24}{Splitting the data into training set and test set}{section*.21}% 24
+\BOOKMARK [2][-]{section*.25}{Amount of data used for training}{section*.21}% 25
+\BOOKMARK [2][-]{section*.26}{Converting the data to the tensors and creating the training set as well as test set}{section*.21}% 26
+\BOOKMARK [2][-]{section*.27}{Plotting the actual data}{section*.21}% 27
+\BOOKMARK [2][-]{section*.28}{Creating an LSTM class for the LSTM network}{section*.21}% 28
+\BOOKMARK [2][-]{section*.29}{Size of the input \(It should be 3 because we have three variables S, I and R\)}{section*.21}% 29
+\BOOKMARK [2][-]{section*.30}{Size of the output \(It should be 3 because we want to predict three variables S, I and R\)}{section*.21}% 30
+\BOOKMARK [2][-]{section*.31}{Number of the LSTM layers to be used}{section*.21}% 31
+\BOOKMARK [2][-]{section*.32}{Number of neurons in LSTM layer}{section*.21}% 32
+\BOOKMARK [2][-]{section*.33}{Creating the LSTM network}{section*.21}% 33
+\BOOKMARK [2][-]{section*.34}{Loss function for the LSTM network}{section*.21}% 34
+\BOOKMARK [2][-]{section*.35}{Learning Rate}{section*.21}% 35
+\BOOKMARK [2][-]{section*.36}{Optimizer for LSTM network}{section*.21}% 36
+\BOOKMARK [2][-]{section*.37}{Training the LSTM model}{section*.21}% 37
+\BOOKMARK [2][-]{section*.38}{Number of the epochs}{section*.21}% 38
+\BOOKMARK [2][-]{section*.39}{Comparing the actual data with the predicted data on the test dataset}{section*.21}% 39
+\BOOKMARK [2][-]{section*.40}{Saving the parameters of LSTM Model}{section*.21}% 40
+\BOOKMARK [1][-]{section*.41}{Physics Informed Neural Network \(PINN\)}{}% 41
+\BOOKMARK [2][-]{section*.42}{Defining the Custom loss function for PINN \(L1 Loss\)}{section*.41}% 42
+\BOOKMARK [2][-]{section*.43}{Defining the Custom loss function for PINN \(MSE Loss\)}{section*.41}% 43
+\BOOKMARK [2][-]{section*.44}{Creating the PINN}{section*.41}% 44
+\BOOKMARK [2][-]{section*.45}{Optimizer for PINN}{section*.41}% 45
+\BOOKMARK [2][-]{section*.46}{Training the PINN model}{section*.41}% 46
+\BOOKMARK [2][-]{section*.47}{Number of the epochs}{section*.41}% 47
+\BOOKMARK [2][-]{section*.48}{Infection rate}{section*.41}% 48
+\BOOKMARK [2][-]{section*.49}{Recovery rate}{section*.41}% 49
+\BOOKMARK [2][-]{section*.50}{Comparing the actual data with the predicted data on the test dataset}{section*.41}% 50
+\BOOKMARK [2][-]{section*.51}{Saving the parameters of PINN Model}{section*.41}% 51
+\BOOKMARK [1][-]{section*.52}{Comparision of LSTM and PINN}{}% 52
